@@ -4,14 +4,14 @@ library(plyr)
 file <- "data.zip"
 url <-
   "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-data_path <- "UCI HAR Dataset"
-result_folder <- "results"
+data_dir <- "UCI HAR Dataset"
+result_dir <- "results"
 
 
 ##reads in zip file
 getTable <- function (filename, cols = NULL) {
   print(paste("Getting table:", filename))
-    f <- unz(file, paste(data_path, filename, sep = "/"))
+    f <- unz(file, paste(data_dir, filename, sep = "/"))
     data <- data.frame()
     if (is.null(cols)) {
     data <- read.table(f, sep = "", stringsAsFactors = F)
@@ -43,7 +43,7 @@ getData <- function(type, features) {
 saveResult <- function (data, name) {
   print(paste("Saving data", name))
   
-  file <- paste(result_folder, "/", name, ".csv" , sep = "")
+  file <- paste(result.dir, "/", name, ".csv" , sep = "")
   write.csv(data, file)
 }
 
