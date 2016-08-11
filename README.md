@@ -1,3 +1,5 @@
+line commenting is also written in the R script. 
+
 setwd("C://Users/M247073/Desktop/get_and_clean_data/")
 
 ##download the data for analysis
