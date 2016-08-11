@@ -1,4 +1,4 @@
-setwd("C://Users/M247073/Desktop/get_and_clean_data/")
+setwd("./get_and_clean_data/")
 
 ##download the data for analysis
 library(data.table)
