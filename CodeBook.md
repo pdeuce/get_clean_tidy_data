@@ -20,7 +20,6 @@ Description of the run_analytics.R process
 * Loading activity labels `activity_labels.txt`
 * Changes the data activity row to use the activity labels
 * Extracts the `mean`,`std` into dataset1
-* Saves dataset1 into `result/dataset1.csv`
 * Uses plur to calculate mean on activity for each id
 * appends `_mean` to all data columns
-* saves the tidy dataset2 into `result/dataset2.csv`
+* saves the tidy dataset2 into `data_tidy.csv`
